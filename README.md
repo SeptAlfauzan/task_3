@@ -68,3 +68,9 @@ dimana menggunakan method watch dan diikuti nama provider yang ingin di observe 
 untuk provider yang memiliki beberapa task, agar memudahan managementnya, saya menggunakan class based seperti pada file home_notifier.dart, dan untuk provider yang memiliki satu task saya menggunakan pendekatan function based seperti pada file create_task_provider.dart.
 
 untuk data storage dari todo task, saya menggunakan package sqflite yang mana merupakan package sqlite untuk Flutter. Alasan saya memakai sqlite supaya data dari task user yang telah dibuat, dimark selesai, atau telah dihapus, datanya tetap persistant di mobile phone user. maksutnya data akan tetap sama seperti kondisi akhir dari aplikasi meskipun aplikasinya diclose dari background process atau pun ketika membuka ulang aplikasinya.
+
+beberapa library lain yang saya gunakan:
+
+- json_annotation & json_serializeble: untuk mengubah key value dari Map agar bisa dimapping ke variable
+- go_router: untuk routing dan navigasi
+- build_runner: untuk code generation
