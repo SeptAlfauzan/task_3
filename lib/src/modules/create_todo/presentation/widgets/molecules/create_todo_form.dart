@@ -59,6 +59,7 @@ class _CreateTodoFormState extends State<CreateTodoForm> {
                   dueDate: selectedDate.toString(),
                 );
                 widget.onSubmit(createTask);
+                FocusManager.instance.primaryFocus?.unfocus();
               },
               child: const Text("Create"),
             ),
